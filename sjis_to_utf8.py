@@ -25,7 +25,7 @@ def main():
     ファイルのパスを取得して変換に投げる
     """
 
-    path_inputdir = input('変換したいファイルがあるフォルダ: ')
+    path_inputdir = input('変換したいファイルがあるフォルダ: ').strip('"')
     target_ext = input('変換したいファイルの拡張子      : ')
     l = glob(f'{path_inputdir}/*{target_ext}')
     print('対象ファイル:')
